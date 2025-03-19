@@ -206,3 +206,11 @@ const newCounts = email => {
 
 newCounts('macarena@gmail.com');
 newCounts('macarena@');
+
+// 19  Macarena está validando números de identificación. Si un número tiene exactamente 8 caracteres y termina en una letra, será válido. Si no cumple estas condiciones, será inválido. Crea una función que reciba un número de identificación y determine si es correcto.
+
+// const identificationNumbers = characters =>{
+//   if (characters.length === 8 && )
+// }
+
+// 20 Abby encontró una combinación de caja fuerte que parece ser un número de 4 dígitos. Quiere probar combinaciones aleatorias hasta encontrar una que termine en 7. Crea una función que genere un número de 4 dígitos que termine en 7.
