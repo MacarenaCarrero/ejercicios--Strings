@@ -39,6 +39,7 @@ passwordSabrina('maca');
 
 const textMacarena = phrase => {
   const upperCase = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+  //phrase.charAt(0) === phrase.charAt(0).toUpperCase && phrase.endsWith ('.')
   if (upperCase.includes(phrase.charAt(0)) && phrase.endsWith('.')) {
     console.log('Esta correcta');
   } else {
@@ -90,7 +91,7 @@ checkDomain('macarena@mc.nm');
 // 8 Sabrina está revisando una lista de palabras. Si una palabra contiene la letra "z", la marcará como especial. Si no, será una palabra común. Crea una función que reciba una palabra y determine su categoría.
 
 const listWords = word => {
-  if (word.includes('z')) {
+  if (word.includes('z') || word.includes('Z')) {
     console.log('Es una palabra especial.');
   } else {
     console.log('Es una palabra común.');
@@ -209,8 +210,19 @@ newCounts('macarena@');
 
 // 19  Macarena está validando números de identificación. Si un número tiene exactamente 8 caracteres y termina en una letra, será válido. Si no cumple estas condiciones, será inválido. Crea una función que reciba un número de identificación y determine si es correcto.
 
-// const identificationNumbers = characters =>{
-//   if (characters.length === 8 && )
-// }
+//const identificationNumbers = characters =>{
+
+//  if (characters.length === 8 && )
+//}
 
 // 20 Abby encontró una combinación de caja fuerte que parece ser un número de 4 dígitos. Quiere probar combinaciones aleatorias hasta encontrar una que termine en 7. Crea una función que genere un número de 4 dígitos que termine en 7.
+
+const numberRandom = () => {
+  //const randomNumber =Math.floor(Math.random()* (999-100)+100)
+  //console.log (random.Number + '7')
+  const roundNumber1 = Math.floor(Math.random() * 10);
+  const roundNumber2 = Math.floor(Math.random() * 10);
+  const roundNumber3 = Math.floor(Math.random() * 10);
+  console.log(roundNumber1 + roundNumber2 + roundNumber3 + '7');
+};
+numberRandom();
