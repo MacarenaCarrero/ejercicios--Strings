@@ -226,3 +226,5 @@ const numberRandom = () => {
   console.log(roundNumber1 + roundNumber2 + roundNumber3 + '7');
 };
 numberRandom();
+
+// 21
